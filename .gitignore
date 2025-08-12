@@ -1,0 +1,59 @@
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+env.bak/
+venv.bak/
+
+# Virtual Environment (specific to your project)
+C:/Users/drabe/OneDrive/Desktop/api/venv/
+C:\\Users\\drabe\\OneDrive\\Desktop\\api\\venv/
+
+# Django
+*.log
+*.pot
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+
+# IDE and Editor
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Secret Keys
+*.key
+*.pem
+*.env
+.env
+local_settings.py
+mysite/local_settings.py
+
+# Build and Distribution
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Miscellaneous
+*.swp
+*~

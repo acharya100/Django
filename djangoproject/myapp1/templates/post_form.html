@@ -1,0 +1,10 @@
+<h1>{% if object %}Edit post{% else %}create New Post{% endif %}</h1>
+
+<form method = "post">
+    {% csrf_token %}
+    {{ form.as_p }}
+  <button type="submit">Save</button>
+</form>
+
+<hr>
+<a href="{% url 'post_list' %}">Back to All Posts</a>

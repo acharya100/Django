@@ -1,0 +1,8 @@
+<h1>{{object.title}}</h1>
+<p>{{object.content}}</p>
+
+<hr>
+
+<a href="{% url 'post_edit' object.pk %}">Edit</a>
+<a href="{% url 'post_delete' object.pk %}">Delete</a>
+<a href="{% url 'post_list' %}">Back to All Post</a>
