@@ -75,6 +75,7 @@ def post_delete(request,pk):
     post.delete()
     return redirect("post_list")
 
+
 @api_view(['GET', 'POST'])
 def api_post_list_create(request):
     if request.method == 'GET':
@@ -87,6 +88,7 @@ def api_post_list_create(request):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 @api_view(['GET', 'PUT', 'DELETE'])
 def api_post_detail(request, pk):
