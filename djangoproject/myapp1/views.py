@@ -77,6 +77,7 @@ def post_delete(request,pk):
 
 
 @api_view(['GET', 'POST'])
+
 def api_post_list_create(request):
     if request.method == 'GET':
         posts = Post.objects.all()
