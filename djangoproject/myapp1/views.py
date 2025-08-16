@@ -11,13 +11,13 @@ from myapp1.serializers import PostSerializer
 # Create your views here.
 
 def hello(request):
-    return HttpResponse("hello sam")
+    return HttpResponse("hello, sam")
 
 def helloDetails(request,helloid):
     return HttpResponse(helloid)
 
 def course(request):
-    return HttpResponse("details related to course")
+    return HttpResponse("these are details related to course")
 
 def courseDetails(request,courseid):
     return HttpResponse(courseid)
